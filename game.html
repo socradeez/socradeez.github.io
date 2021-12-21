@@ -1,0 +1,30 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Atomic Theory</title>
+
+</head>
+<body>
+    <div id="app">
+        <div id="consoleDiv">
+            <div id="consoleOld">
+                <div v-for='log in playerData.consoleLog' class="consoleOld">{{ log }}</div>
+            </div>
+            <div id="consoleNew">
+                <span>&nbsp;>&nbsp;</span>
+                <span id="consoleOutputNew"></span>
+                <span id="cursor" class="blink">|</span>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/vue.js"></script>
+<script src="js/playerData.js"></script>
+<script src="js/currencies.js"></script>
+<script src="js/generators.js"></script>
+<script src="js/app.js"></script>
+</html>
