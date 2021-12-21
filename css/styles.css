@@ -10,12 +10,20 @@
 }
 
 #consoleOld {
-    height: 60px;
+    height:60px;
+    overflow-y: hidden;
+}
+
+.consoleOldLog {
+    height:20px;
+    bottom: 0;
 }
 
 #consoleNew {
     height: 20px;
 }
+
+
 
 .blink {
     animation: cursor-blink 1.25s step-end infinite;

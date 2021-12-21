@@ -1,11 +1,17 @@
 class Currency {
-    constructor(name, startingAmount) {
+    constructor(name, startingAmount, isActive, startingIncrement) {
         this.name = name;
         this.amount = startingAmount;
+        this.isActive = isActive;
+        this.incrAmount = startingIncrement;
         currenciesList.push(this);
+    }
+    
+    increment() {
+        this.amount = this.amount += this.incrAmount;
     }
 }
 
-currenciesList = [];
+let currenciesList = [];
 
-let Hydrogen = new Currency('Hydrogen', 0);
+let Hydrogen = new Currency('Hydrogen', 0, True, 0);
